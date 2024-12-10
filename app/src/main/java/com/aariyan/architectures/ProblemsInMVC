@@ -1,0 +1,9 @@
+1. Tight Coupling
+The TaskListView is tightly coupled with the Controller.
+UI updates (tasks.value) rely on manual intervention, making code harder to maintain.
+2. Manual State Management
+The tasks list in the View is not reactive. Each update requires explicitly re-fetching data from the Controller.
+3. Scalability Issues
+Adding more features like filtering tasks would make the Controller and View more complex and intertwined.
+4. Lack of Reactive UI
+Jetpack Compose is designed for reactive UIs, but MVC's reliance on manual updates contradicts Compose’s principles.
